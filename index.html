@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/list-icon.png" type="image/x-icon">
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <header>
+        <h1>To-Do List</h1>
+        <span class="material-symbols-outlined title-icon">
+            list_alt_check
+        </span>
+    </header>
+
+    <hr>
+
+    <main>
+        <form>
+            <label for="list-item">Add a task</label>
+            <br>
+            <input type="text" name="list-item-input" id="list-item-input" placeholder="Type here" autocomplete="off" maxlength="200">
+
+            <button type="button" title="Add task to list">
+                <span class="material-symbols-outlined addToList-icon">
+                    format_list_bulleted_add
+                </span>
+            </button>
+
+        </form>
+
+        <div id="item-display">
+            <h2>YOUR PENDING TASKS</h2>
+            <ul type="square">
+            </ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
